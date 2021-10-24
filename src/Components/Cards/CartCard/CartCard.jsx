@@ -38,8 +38,8 @@ export default function CartCard({product}){
                     <p className="bg-white w-8 h-6 border-gray border-2">{product.quantity}</p>
                   <button onClick={()=>dispatch(incrementQuantity(product))}><i class="fas fa-plus-circle mr-2 ml-2"></i></button>
                   </div>
-                  <button className="ml-2 mr-2" onClick={()=>dispatch(saveForLater(product))}>Save for later</button>
-                  <button className="ml-2 mr-2" onClick={()=>dispatch(removeFromCart(product))}>Remove</button>
+                  <button className="ml-2 mr-2" onClick={()=>dispatch(saveForLater(product))} className="cart-add-btn">Save for later</button>
+                  <button className="ml-2 mr-2" onClick={()=>dispatch(removeFromCart(product))} className="wish-add-btn">Remove</button>
               </div>
         </div>
         </div>

@@ -32,8 +32,8 @@ export default function ProductCard({product}){
                 })}
             </div>
             <div className="button-section flex justify-between w-full">
-                {cart.includes(product)?<Link to="/cart">Go to cart</Link>:<button onClick={()=>dispatch(addToCart(product))}>Add to cart</button>}
-                <button>Wishlist</button>
+                {cart.includes(product)?<Link to="/cart" className="cart-add-btn">Go to cart</Link>:<button className="cart-add-btn" onClick={()=>dispatch(addToCart(product))}>Add to cart</button>}
+                <button className="wish-add-btn">Wishlist</button>
             </div>
         </div>
     );

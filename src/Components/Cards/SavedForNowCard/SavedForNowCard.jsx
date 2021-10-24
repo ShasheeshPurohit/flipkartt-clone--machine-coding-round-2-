@@ -32,12 +32,13 @@ export default function ProductCard({product}){
                 })}
             </div>
             <div className="button-section flex justify-between w-full">
-                {cart.includes(product)?<Link to="/cart">Go to cart</Link>:<button onClick={()=>{
+                {cart.includes(product)?<Link to="/cart" className="cart-add-btn">Go to cart</Link>:<button
+                className="cart-add-btn" onClick={()=>{
                     
                     dispatch(addToCart(product))
                     
                     }}>Move to Cart</button>}
-                <button onClick={()=>dispatch(removeFromSaveForLater(product))}>Remove</button>
+                <button onClick={()=>dispatch(removeFromSaveForLater(product))} className="wish-add-btn">Remove</button>
             </div>
         </div>
     );

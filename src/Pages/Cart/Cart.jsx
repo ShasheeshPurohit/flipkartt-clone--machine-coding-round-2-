@@ -46,7 +46,7 @@ export default function Cart(){
             <div className="bg-gray-200 p-4 flex w-full justify-center">
             <div className="cart-items w-3/5 bg-white mr-4 flex flex-col">
                 <div className="cart-items-heading flex p-2">
-                    <p className="font-bold">My Cart</p>
+                    <p className="font-bold">My Cart{cart.length>0?`(${cart.length})`:""}</p>
                 </div>
                 <div className="cart-items-display">
                     {cart.length>0?cart.map((product)=>{
@@ -84,9 +84,9 @@ export default function Cart(){
                 
             </div>
             </div>
-            <div className="save-for-later">
+            {savedForLater.length>0 && <div className="save-for-later">
                 <p>Saved for later</p>
-                <div className="w-5/6 flex flex-wrap">
+                <div className="w-5/6 flex flex-wrap justify-center">
                     {savedForLater.map((item)=>{
                         return(
                             <div className="product-card">
@@ -96,7 +96,7 @@ export default function Cart(){
                         );
                     })}
                 </div>
-            </div> 
+            </div> }
         </div>
     );
 }

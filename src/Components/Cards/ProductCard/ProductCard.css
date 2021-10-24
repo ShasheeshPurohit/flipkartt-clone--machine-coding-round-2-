@@ -17,3 +17,16 @@
     color: green;
     font-weight: 500;
 }
+
+.cart-add-btn{
+    background-color: orange;
+    padding: 0.4rem;
+    font-weight: 500;
+}
+
+.wish-add-btn{
+    background-color: purple;
+    padding: 0.4rem;
+    color: white;
+    font-weight: 500;
+}
