@@ -1,0 +1,19 @@
+.product-card-layout{
+    height: 27rem;
+    width: 15rem;
+}
+
+.product-card-image-container{
+    height: 18rem;
+    width: 100%;
+}
+
+.product-card-image{
+    height: 100%;
+    width: 100%;
+}
+
+.discount-text{
+    color: green;
+    font-weight: 500;
+}

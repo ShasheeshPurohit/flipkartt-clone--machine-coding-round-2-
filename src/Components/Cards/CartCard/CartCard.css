@@ -1,0 +1,21 @@
+.cart-card-layout{
+    /* height: 14rem; */
+    border-top: 2px solid rgba(128, 128, 128, 0.541);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.541);
+}
+
+.cart-product-image-scetion{
+    height: 100%;
+    padding: 1rem;
+}
+
+.cart-product-image{
+    height: 80%;
+    width: 100%;
+}
+
+
+.discount-text{
+    color: green;
+    font-weight: 500;
+}

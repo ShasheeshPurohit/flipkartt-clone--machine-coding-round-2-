@@ -1,0 +1,1 @@
+export const baseurl = "https://flipkart.shasheeshpuroh1.repl.co/"
